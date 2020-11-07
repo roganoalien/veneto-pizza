@@ -1,5 +1,12 @@
+import { Fragment } from 'react';
+import PizzaSwipe from '../components/PizzaSwipe';
+
 function Home() {
-	return <h1>HOME</h1>;
+	return (
+		<Fragment>
+			<PizzaSwipe />
+		</Fragment>
+	);
 }
 
 export default Home;

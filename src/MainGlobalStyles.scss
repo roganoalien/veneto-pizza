@@ -1,0 +1,85 @@
+$c-red: #c53e33;
+$s-banner: 70px;
+
+body {
+	font-size: 16px;
+	overflow-x: hidden;
+	width: 100vw;
+}
+
+.main-header {
+	background-size: cover !important;
+	background-position: 57% top !important;
+	height: 90vh;
+	overflow: hidden;
+	// padding-top: $s-banner;
+	width: 100vw;
+	.main-logo {
+		filter: drop-shadow(0 40px 10px rgba(black, 0.5));
+	}
+	.order-btn {
+		background-size: cover !important;
+		background-position: center !important;
+		filter: drop-shadow(0 10px 10px rgba(black, 0.75));
+		img {
+			filter: drop-shadow(0 10px 10px rgba(black, 0.5));
+			height: 35px;
+			left: 20px;
+			top: 50%;
+			position: absolute;
+			transform: translate(0, -40%);
+			width: auto;
+		}
+		span {
+			letter-spacing: 2px;
+			text-shadow: 0 5px 8px rgba(black, 0.5);
+			transform: translateZ(10px);
+		}
+	}
+	.the-fake-hr {
+		background-size: contain !important;
+		background-repeat: repeat-x;
+		height: 45px;
+	}
+}
+
+// .main-content-container {
+// }
+
+.main-nav-header {
+	background: $c-red;
+	color: white;
+	cursor: pointer;
+	height: $s-banner;
+	z-index: 10;
+	.floating-text {
+		// animation: animate_one 2s linear 0 infinite;
+		animation: animate;
+		animation-duration: 20s;
+		animation-iteration-count: infinite;
+		animation-timing-function: linear;
+		cursor: pointer;
+		left: 100%;
+		top: 50%;
+		transform: translate3d(0%, -50%, 0);
+		will-change: transform;
+		&:last-child {
+			animation-delay: 10s;
+			left: 100%;
+		}
+	}
+	&:hover {
+		.floating-text {
+			animation-play-state: paused;
+		}
+	}
+}
+
+@keyframes animate {
+	0% {
+		transform: translate3d(0%, -50%, 0);
+	}
+	100% {
+		transform: translate3d(-200%, -50%, 0);
+	}
+}

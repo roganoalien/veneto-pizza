@@ -8,7 +8,7 @@ import './tailwind.output.css';
 
 WebFont.load({
 	google: {
-		families: ['Montserrat:300,400,700,900', 'sans-serif']
+		families: ['Poppins:300,400,700,900', 'sans-serif']
 	}
 });
 
