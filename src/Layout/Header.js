@@ -1,6 +1,7 @@
 import Tilt from 'react-tilt';
 
-import HeaderImg from '../assets/header-veneto-pizza.png';
+// import HeaderImg from '../assets/header-veneto-pizza.png';
+import HeaderImg from '../assets/header-veneto-pizza.jpg';
 import Veneto from '../assets/veneto-main.png';
 import BtnBg from '../assets/btn-bg.png';
 import Pizza from '../assets/pizza-icon.png';
