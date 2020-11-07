@@ -16,7 +16,7 @@ function Header() {
 				className="flex justify-center items-center"
 				options={{
 					reverse: true,
-					max: 30,
+					max: 20,
 					perspective: 1000,
 					scale: 1.05,
 					speed: 300,
@@ -43,7 +43,7 @@ function Header() {
 				}}
 			>
 				<a
-					href="#test"
+					href="https://app.vmarket.mx/?rId=4"
 					className="order-btn rounded-full flex items-center justify-center px-6 py-3 mt-12"
 					style={{ background: `url(${BtnBg})` }}
 				>

@@ -1,4 +1,5 @@
-$c-red: #c53e33;
+$c-red: #e43d30;
+$c-green: #17988b;
 $s-banner: 70px;
 
 body {
@@ -8,11 +9,10 @@ body {
 }
 
 .main-header {
-	background-size: cover !important;
+	// background-size: cover !important;
 	background-position: 57% top !important;
 	height: 90vh;
 	overflow: hidden;
-	// padding-top: $s-banner;
 	width: 100vw;
 	.main-logo {
 		filter: drop-shadow(0 40px 10px rgba(black, 0.5));
@@ -37,9 +37,28 @@ body {
 		}
 	}
 	.the-fake-hr {
-		background-size: contain !important;
-		background-repeat: repeat-x;
-		height: 45px;
+		background-size: cover !important;
+		// background-attachment: fixed !important;
+		background-repeat: repeat-x !important;
+		height: 35px;
+	}
+	@media (max-width: 1220px) {
+		background-position: center !important;
+	}
+}
+
+.the-pizza-slide {
+	position: relative;
+	h2 {
+		background: rgba(white, 0.35);
+		backdrop-filter: blur(10px);
+		left: 50%;
+		letter-spacing: 2px;
+		position: absolute;
+		top: 50%;
+		transform: translate(-50%, -50%);
+		will-change: transform;
+		width: 80%;
 	}
 }
 
@@ -73,6 +92,74 @@ body {
 			animation-play-state: paused;
 		}
 	}
+	@media (max-width: 1220px) {
+		.floating-text {
+			p:first-child {
+				margin-right: 0 !important;
+			}
+		}
+	}
+	@media (max-width: 1110px) {
+		.floating-text {
+			padding: 0 !important;
+			p:last-child {
+				display: none;
+			}
+		}
+	}
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+	height: 115% !important;
+	transform: translateY(-50%);
+	transition: opacity 0.5s ease-in-out;
+	width: 100px !important;
+	&:after {
+		display: none;
+	}
+	&.swiper-button-disabled {
+		opacity: 0;
+	}
+}
+
+.swiper-slide {
+	min-height: 250px;
+	h2 {
+		font-size: 30px !important;
+	}
+	@media (max-width: 1023px) {
+		h2 {
+			font-size: 20px !important;
+		}
+	}
+}
+
+.swiper-button-prev {
+	background: linear-gradient(90deg, white 10%, transparent 100%);
+	left: 0 !important;
+	&:before {
+		background: url('./assets/prev-arrow.svg');
+		content: '';
+		background-position: left center;
+		background-size: 50px 50px;
+		background-repeat: no-repeat;
+		height: 100%;
+		width: 100%;
+	}
+}
+.swiper-button-next {
+	background: linear-gradient(90deg, transparent 0%, white 90%);
+	right: 0 !important;
+	&:before {
+		background: url('./assets/next-arrow.svg');
+		content: '';
+		background-position: right center;
+		background-size: 50px 50px;
+		background-repeat: no-repeat;
+		height: 100%;
+		width: 100%;
+	}
 }
 
 @keyframes animate {
@@ -82,4 +169,59 @@ body {
 	100% {
 		transform: translate3d(-200%, -50%, 0);
 	}
+}
+
+.box-kit-section {
+	background: $c-green;
+}
+
+.animate_shakeY {
+	animation-name: shakeY;
+	animation-duration: 1s;
+	animation-iteration-count: infinite;
+}
+
+@keyframes shakeY {
+	from,
+	to {
+		transform: translate3d(0, 0, 0);
+	}
+
+	10%,
+	30%,
+	50%,
+	70%,
+	90% {
+		transform: translate3d(0, -1px, 0);
+	}
+
+	20%,
+	40%,
+	60%,
+	80% {
+		transform: translate3d(0, 1px, 0);
+	}
+}
+
+.contact-card {
+	background: $c-green;
+	border-radius: 15px;
+}
+
+.puesto-vector {
+	transform: translateY(32px);
+}
+
+.the-main-footer {
+	background: $c-red;
+}
+
+.rappi-logo,
+.uber-logo,
+.didi-logo {
+	height: 30px;
+}
+
+.uber-logo {
+	height: 25px;
 }
