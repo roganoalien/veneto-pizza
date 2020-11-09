@@ -1,12 +1,28 @@
+import { useState } from 'react';
 import Box from '../assets/pizzakit.png';
+import BoxHover from '../assets/pizzakit_hover.png';
 import PizzaIcon from '../assets/pizza-icon.png';
 
 function BoxKit() {
+	const [boxImage, setBoxImage] = useState(Box);
+
+	const handleChange = () => {
+		if (boxImage === Box) {
+			setBoxImage(BoxHover);
+		} else {
+			setBoxImage(Box);
+		}
+	};
+
 	return (
-		<section className="box-kit-section w-full border-4 border-black">
-			<div className="container mx-auto flex flex-wrap items-center justify-center pt-8 pb-3">
-				<article className="pizzakit w-full lg:w-5/12 mb-5 sm:mb-0 px-40 sm:px-32 md:px-56 lg:px-10">
-					<img src={Box} alt="Pizza Kit" />
+		<section className="box-kit-section w-full">
+			<div className="container mx-auto flex flex-wrap items-center justify-center pt-16 pb-8 px-10 lg:px-20">
+				<article
+					onMouseEnter={handleChange}
+					onMouseLeave={handleChange}
+					className="pizzakit w-full lg:w-5/12 mb-5 sm:mb-0 px-40 sm:px-32 md:px-56 lg:px-10 flex items-center justify-center"
+				>
+					<img src={boxImage} alt="Pizza Kit" />
 				</article>
 				<article className="w-full lg:w-7/12 flex flex-col items-center justify-center text-white tracking-widest font-bold">
 					<h2 className="text-4xl">¡Ordena tu Pizza Kit!</h2>

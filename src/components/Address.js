@@ -3,14 +3,15 @@ import { ReactComponent as Moto } from '../assets/moto.svg';
 
 function Address() {
 	return (
-		<article className="contact-section w-full pt-20 lg:pt-32 flex flex-wrap items-end justify-center">
+		<article className="contact-section w-full pt-20 lg:pt-32 flex flex-wrap items-end justify-center relative">
 			<div className="w-full lg:w-4/12 flex items-end justify-center lg:justify-between order-2 lg:order-1">
-				<Puesto className="h-auto w-4/12 lg:w-8/12 puesto-vector" />
-				<Moto className="h-auto w-2/12 lg:w-4/12 animate_shakeY" />
+				<Puesto className="h-auto w-4/12 lg:w-8/12 puesto-vector relative" />
+				{/* <Moto className="h-auto w-2/12 lg:w-4/12 animate_shakeY left-0 bottom-0" /> */}
+				<Moto className="animate_shakeY absolute left-0 bottom-0" />
 			</div>
-			<div className="w-full lg:w-8/12 flex flex-wrap items-end justify-center px-10 pb-10 order-1 lg:order-2">
+			<div className="w-full lg:w-8/12 flex flex-wrap items-end justify-center px-10 pb-10 order-1 lg:order-2 relative z-1">
 				<div className="w-full md:w-6/12 px-4 mb-8 md:mb-0">
-					<div className="border-4 border-black contact-card p-4">
+					<div className="contact-card p-4">
 						<h3 className="text-white text-lg font-bold tracking-wide text-center">
 							Country | Tec
 						</h3>
@@ -20,7 +21,7 @@ function Address() {
 					</div>
 				</div>
 				<div className="w-full md:w-6/12 px-4">
-					<div className="border-4 border-black contact-card p-4">
+					<div className="contact-card p-4">
 						<h3 className="text-white text-lg font-bold tracking-wide text-center">
 							Mitras
 						</h3>

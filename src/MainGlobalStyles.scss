@@ -18,9 +18,12 @@ body {
 		filter: drop-shadow(0 40px 10px rgba(black, 0.5));
 	}
 	.order-btn {
-		background-size: cover !important;
-		background-position: center !important;
+		background: url('./assets//btn-bg.svg');
+		background-size: 50%;
+		background-position: 0;
+		background-repeat: repeat;
 		filter: drop-shadow(0 10px 10px rgba(black, 0.75));
+		transition: all 0.25s linear;
 		img {
 			filter: drop-shadow(0 10px 10px rgba(black, 0.5));
 			height: 35px;
@@ -35,9 +38,13 @@ body {
 			text-shadow: 0 5px 8px rgba(black, 0.5);
 			transform: translateZ(10px);
 		}
+		&:hover {
+			background-position: 50px !important;
+		}
 	}
 	.the-fake-hr {
 		background-size: cover !important;
+		background-position: center !important;
 		// background-attachment: fixed !important;
 		background-repeat: repeat-x !important;
 		height: 35px;
@@ -50,15 +57,18 @@ body {
 .the-pizza-slide {
 	position: relative;
 	h2 {
-		background: rgba(white, 0.35);
+		// background: rgba(white, 0.35);
+		background: rgba(#18988b, 0.85);
 		backdrop-filter: blur(10px);
+		box-shadow: 0 15px 15px -10px rgba(#18988b, 0.75);
 		left: 50%;
 		letter-spacing: 2px;
+		padding: 0.5em 1em;
 		position: absolute;
 		top: 50%;
 		transform: translate(-50%, -50%);
 		will-change: transform;
-		width: 80%;
+		// width: 80%;
 	}
 }
 
@@ -126,11 +136,11 @@ body {
 .swiper-slide {
 	min-height: 250px;
 	h2 {
-		font-size: 30px !important;
+		font-size: 18px !important;
 	}
 	@media (max-width: 1023px) {
 		h2 {
-			font-size: 20px !important;
+			font-size: 18px !important;
 		}
 	}
 }
@@ -176,15 +186,18 @@ body {
 }
 
 .animate_shakeY {
-	animation-name: shakeY;
-	animation-duration: 1s;
-	animation-iteration-count: infinite;
+	// animation-name: shakeY;
+	// animation-duration: 1s;
+	// animation-iteration-count: infinite;
+	animation: shakeY 1s infinite, around 5s infinite linear;
+	height: 104px;
+	width: auto;
 }
 
 @keyframes shakeY {
 	from,
 	to {
-		transform: translate3d(0, 0, 0);
+		transform: translate3d(0, 5px, 0);
 	}
 
 	10%,
@@ -192,24 +205,35 @@ body {
 	50%,
 	70%,
 	90% {
-		transform: translate3d(0, -1px, 0);
+		transform: translate3d(0, 4px, 0);
 	}
 
 	20%,
 	40%,
 	60%,
 	80% {
-		transform: translate3d(0, 1px, 0);
+		transform: translate3d(0, 6px, 0);
+	}
+}
+
+@keyframes around {
+	from {
+		left: -15%;
+	}
+	to {
+		left: 115%;
 	}
 }
 
 .contact-card {
 	background: $c-green;
+	box-shadow: 0 10px 10px 0 rgba($c-green, 0.25);
 	border-radius: 15px;
 }
 
 .puesto-vector {
-	transform: translateY(32px);
+	transform: translateY(42px);
+	z-index: 2;
 }
 
 .the-main-footer {
@@ -224,4 +248,76 @@ body {
 
 .uber-logo {
 	height: 25px;
+}
+
+.pizzakit {
+	img {
+		height: auto;
+		width: 80%;
+	}
+	@media (max-width: 580px) {
+		img {
+			height: auto;
+			width: 100%;
+		}
+	}
+}
+
+.the-background-swiper {
+	z-index: 0;
+	.swiper-container {
+		height: 100%;
+		width: 100%;
+		.swiper-button-next,
+		.swiper-button-prev {
+			cursor: pointer;
+			background: transparent;
+			pointer-events: auto !important;
+			z-index: 10;
+		}
+		.swiper-button-prev {
+			height: 70px !important;
+			width: 70px !important;
+			&:before {
+				background: url('./assets/prev-arrow-black.svg');
+				background-color: $c-red;
+				background-position: center;
+				background-size: 40px;
+				background-repeat: no-repeat;
+				border-bottom-right-radius: 10px;
+				border-top-right-radius: 10px;
+				box-shadow: 5px 5px 5px rgba(black, 0.15);
+				height: 100%;
+				width: 100%;
+			}
+		}
+		.swiper-button-next {
+			height: 70px !important;
+			width: 70px !important;
+			&:before {
+				background: url('./assets/next-arrow-black.svg');
+				background-color: $c-red;
+				background-position: center;
+				background-size: 40px;
+				background-repeat: no-repeat;
+				border-bottom-left-radius: 10px;
+				border-top-left-radius: 10px;
+				box-shadow: -5px 5px 5px rgba(black, 0.15);
+				height: 100%;
+				width: 100%;
+			}
+		}
+		.swiper-slide {
+			background-size: cover !important;
+			background-position: center !important;
+			&.swiper-slide-active {
+				opacity: 1;
+			}
+		}
+	}
+}
+
+.with-z-1 {
+	position: relative;
+	z-index: 1;
 }

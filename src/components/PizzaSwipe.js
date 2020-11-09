@@ -41,7 +41,7 @@ function PizzaSwipe() {
 					spaceBetween={50}
 					slidesPerView={4}
 					navigation
-					centeredSlides={true}
+					// centeredSlides={true}
 					grabCursor={true}
 					updateOnWindowResize={true}
 					// onReachBeginning
@@ -53,33 +53,33 @@ function PizzaSwipe() {
 								key={pizza.name}
 								className="the-pizza-slide"
 							>
-								{({ isActive }) => (
-									<Fragment>
-										<img src={pizza.img} alt={pizza.name} />
-										{isActive && (
-											<motion.h2
-												className="text-center font-bold rounded-full shadow-2xl border-2 border-black leading-tight py-2 px-2"
-												initial={{
-													opacity: 0,
-													x: '-50%',
-													y: '100%'
-												}}
-												animate={{
-													opacity: 1,
-													y: '-50%',
-													x: '-50%'
-												}}
-												exit={{
-													opacity: 0,
-													y: '100%',
-													x: '-50%'
-												}}
-											>
-												{pizza.name}
-											</motion.h2>
-										)}
-									</Fragment>
-								)}
+								{/* {({ isActive }) => ( */}
+								<Fragment>
+									<img src={pizza.img} alt={pizza.name} />
+									{/* {isActive && ( */}
+									<motion.h2
+										className="text-center font-bold rounded-full shadow-2xl leading-tight py-2 px-2 text-white whitespace-no-wrap"
+										initial={{
+											opacity: 0,
+											x: '-50%',
+											y: '100%'
+										}}
+										animate={{
+											opacity: 1,
+											y: '-50%',
+											x: '-50%'
+										}}
+										exit={{
+											opacity: 0,
+											y: '100%',
+											x: '-50%'
+										}}
+									>
+										{pizza.name}
+									</motion.h2>
+									{/* )} */}
+								</Fragment>
+								{/* )} */}
 							</SwiperSlide>
 						))}
 					</Fragment>
@@ -90,7 +90,7 @@ function PizzaSwipe() {
 					spaceBetween={50}
 					slidesPerView={3}
 					navigation
-					centeredSlides={true}
+					// centeredSlides={true}
 					grabCursor={true}
 					updateOnWindowResize={true}
 				>
@@ -100,33 +100,33 @@ function PizzaSwipe() {
 								key={pizza.name}
 								className="the-pizza-slide"
 							>
-								{({ isActive }) => (
-									<Fragment>
-										<img src={pizza.img} alt={pizza.name} />
-										{isActive && (
-											<motion.h2
-												className="text-center font-bold rounded-full shadow-2xl border-2 border-black leading-tight py-2 px-2"
-												initial={{
-													opacity: 0,
-													x: '-50%',
-													y: '100%'
-												}}
-												animate={{
-													opacity: 1,
-													y: '-50%',
-													x: '-50%'
-												}}
-												exit={{
-													opacity: 0,
-													y: '100%',
-													x: '-50%'
-												}}
-											>
-												{pizza.name}
-											</motion.h2>
-										)}
-									</Fragment>
-								)}
+								{/* {({ isActive }) => ( */}
+								<Fragment>
+									<img src={pizza.img} alt={pizza.name} />
+									{/* {isActive && ( */}
+									<motion.h2
+										className="text-center font-bold rounded-full shadow-2xl leading-tight py-2 px-2 text-white whitespace-no-wrap"
+										initial={{
+											opacity: 0,
+											x: '-50%',
+											y: '100%'
+										}}
+										animate={{
+											opacity: 1,
+											y: '-50%',
+											x: '-50%'
+										}}
+										exit={{
+											opacity: 0,
+											y: '100%',
+											x: '-50%'
+										}}
+									>
+										{pizza.name}
+									</motion.h2>
+									{/* )} */}
+								</Fragment>
+								{/* )} */}
 							</SwiperSlide>
 						))}
 					</Fragment>
@@ -137,7 +137,7 @@ function PizzaSwipe() {
 					spaceBetween={50}
 					slidesPerView={2}
 					navigation
-					centeredSlides={true}
+					// centeredSlides={true}
 					grabCursor={true}
 					updateOnWindowResize={true}
 					// onReachBeginning
@@ -149,33 +149,33 @@ function PizzaSwipe() {
 								key={pizza.name}
 								className="the-pizza-slide"
 							>
-								{({ isActive }) => (
-									<Fragment>
-										<img src={pizza.img} alt={pizza.name} />
-										{isActive && (
-											<motion.h2
-												className="text-center font-bold rounded-full shadow-2xl border-2 border-black leading-tight py-2 px-2"
-												initial={{
-													opacity: 0,
-													x: '-50%',
-													y: '100%'
-												}}
-												animate={{
-													opacity: 1,
-													y: '-50%',
-													x: '-50%'
-												}}
-												exit={{
-													opacity: 0,
-													y: '100%',
-													x: '-50%'
-												}}
-											>
-												{pizza.name}
-											</motion.h2>
-										)}
-									</Fragment>
-								)}
+								{/* {({ isActive }) => ( */}
+								<Fragment>
+									<img src={pizza.img} alt={pizza.name} />
+									{/* {isActive && ( */}
+									<motion.h2
+										className="text-center font-bold rounded-full shadow-2xl leading-tight py-2 px-2 text-white whitespace-no-wrap"
+										initial={{
+											opacity: 0,
+											x: '-50%',
+											y: '100%'
+										}}
+										animate={{
+											opacity: 1,
+											y: '-50%',
+											x: '-50%'
+										}}
+										exit={{
+											opacity: 0,
+											y: '100%',
+											x: '-50%'
+										}}
+									>
+										{pizza.name}
+									</motion.h2>
+									{/* )} */}
+								</Fragment>
+								{/* )} */}
 							</SwiperSlide>
 						))}
 					</Fragment>
