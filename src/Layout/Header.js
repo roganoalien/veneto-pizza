@@ -4,7 +4,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 
 import 'swiper/swiper.scss';
 import 'swiper/components/effect-fade/effect-fade.scss';
-import HeaderImg from '../assets/header-veneto-pizza.jpg';
+// import HeaderImg from '../assets/header-veneto-pizza.jpg';
 import Header2 from '../assets/header2.jpg';
 import Header3 from '../assets/header3.jpg';
 import Header4 from '../assets/header4.jpg';
@@ -15,7 +15,8 @@ import Veneto from '../assets/veneto-main.png';
 import Pizza from '../assets/pizza-icon.png';
 import FakeHr from '../assets/fake-hr.png';
 
-const imageArray = [HeaderImg, Header2, Header3, Header4, Header5, Header6];
+// const imageArray = [HeaderImg, Header2, Header3, Header4, Header5, Header6];
+const imageArray = [Header2, Header3, Header4, Header5, Header6];
 SwiperCore.use([Autoplay, EffectFade, Navigation]);
 // SwiperCore.use([Autoplay]);
 // SwiperCore.use([EffectFade]);
@@ -48,9 +49,9 @@ function Header() {
 					<SwiperSlide
 						style={{ background: `url(${imageArray[4]})` }}
 					></SwiperSlide>
-					<SwiperSlide
+					{/* <SwiperSlide
 						style={{ background: `url(${imageArray[5]})` }}
-					></SwiperSlide>
+					></SwiperSlide> */}
 				</Swiper>
 			</div>
 			<Tilt
@@ -66,7 +67,7 @@ function Header() {
 				}}
 			>
 				<img
-					className="main-logo h-auto w-auto"
+					className="main-logo h-auto w-auto transform scale-125"
 					src={Veneto}
 					alt="Veneto Pizza"
 				/>
@@ -88,6 +89,7 @@ function Header() {
 					className="with-z-1 order-btn rounded-full flex items-center justify-center px-6 py-3 mt-12"
 					// style={{ background: `url(${BtnBg})` }}
 				>
+					<div className="bg-faker absolute left-0 top-0 h-full"></div>
 					<img src={Pizza} alt="Pizza Icon" />
 					<span className="text-white font-bold text-xl pl-10">
 						Ordena en línea

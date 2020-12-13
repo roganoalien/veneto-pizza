@@ -2,6 +2,7 @@ import { useState } from 'react';
 import Box from '../assets/pizzakit.png';
 import BoxHover from '../assets/pizzakit_hover.png';
 import PizzaIcon from '../assets/pizza-icon.png';
+import FakeHr from '../assets/fake-hr.png';
 
 function BoxKit() {
 	const [boxImage, setBoxImage] = useState(Box);
@@ -15,16 +16,16 @@ function BoxKit() {
 	};
 
 	return (
-		<section className="box-kit-section w-full">
+		<section className="box-kit-section w-full pb-16 relative">
 			<div className="container mx-auto flex flex-wrap items-center justify-center pt-16 pb-8 px-10 lg:px-20">
 				<article
 					onMouseEnter={handleChange}
 					onMouseLeave={handleChange}
-					className="pizzakit w-full lg:w-5/12 mb-5 sm:mb-0 px-40 sm:px-32 md:px-56 lg:px-10 flex items-center justify-center"
+					className="pizzakit w-full lg:w-6/12 mb-5 sm:mb-0 px-40 sm:px-32 md:px-56 lg:px-10 flex items-center justify-center"
 				>
 					<img src={boxImage} alt="Pizza Kit" />
 				</article>
-				<article className="w-full lg:w-7/12 flex flex-col items-center justify-center text-white tracking-widest font-bold">
+				<article className="w-full lg:w-6/12 flex flex-col items-center justify-center text-white tracking-widest font-bold">
 					<h2 className="text-4xl">¡Ordena tu Pizza Kit!</h2>
 					<p className="text-white text-center text-xl mt-2 leading-tight">
 						Disfruta de una deliciosa <br /> pizza creada porti.
@@ -37,6 +38,10 @@ function BoxKit() {
 					</p>
 				</article>
 			</div>
+			<div
+				className="absolute left-0 bottom-0 w-full the-fake-hr with-z-1"
+				style={{ background: `url(${FakeHr})` }}
+			></div>
 		</section>
 	);
 }

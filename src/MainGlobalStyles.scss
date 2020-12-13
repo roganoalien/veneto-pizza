@@ -18,12 +18,21 @@ body {
 		filter: drop-shadow(0 40px 10px rgba(black, 0.5));
 	}
 	.order-btn {
-		background: url('./assets//btn-bg.svg');
-		background-size: 50%;
-		background-position: 0;
-		background-repeat: repeat;
+		background: #28988a;
+		// background: url('./assets//btn-bg.svg');
+		// background-size: 50%;
+		// background-position: 0;
+		// background-repeat: repeat;
 		filter: drop-shadow(0 10px 10px rgba(black, 0.75));
 		transition: all 0.25s linear;
+		overflow: hidden;
+		.bg-faker {
+			background: #0c7a6c;
+			width: 0;
+			transition: all 0.5s ease-in-out;
+			will-change: width;
+			z-index: 1;
+		}
 		img {
 			filter: drop-shadow(0 10px 10px rgba(black, 0.5));
 			height: 35px;
@@ -32,22 +41,20 @@ body {
 			position: absolute;
 			transform: translate(0, -40%);
 			width: auto;
+			z-index: 2;
 		}
 		span {
 			letter-spacing: 2px;
 			text-shadow: 0 5px 8px rgba(black, 0.5);
 			transform: translateZ(10px);
+			z-index: 2;
 		}
 		&:hover {
-			background-position: 50px !important;
+			// background-position: 50px !important;
+			.bg-faker {
+				width: 100%;
+			}
 		}
-	}
-	.the-fake-hr {
-		background-size: cover !important;
-		background-position: center !important;
-		// background-attachment: fixed !important;
-		background-repeat: repeat-x !important;
-		height: 35px;
 	}
 	@media (max-width: 1220px) {
 		background-position: center !important;
@@ -63,12 +70,20 @@ body {
 		box-shadow: 0 15px 15px -10px rgba(#18988b, 0.75);
 		left: 50%;
 		letter-spacing: 2px;
+		opacity: 0 !important;
 		padding: 0.5em 1em;
 		position: absolute;
 		top: 50%;
-		transform: translate(-50%, -50%);
+		transform: translate(-50%, 0) !important;
+		transition: all 0.25s ease-in-out;
 		will-change: transform;
 		// width: 80%;
+	}
+	&:hover {
+		h2 {
+			opacity: 1 !important;
+			transform: translate(-50%, -50%) !important;
+		}
 	}
 }
 
@@ -83,10 +98,10 @@ body {
 	z-index: 10;
 	.floating-text {
 		// animation: animate_one 2s linear 0 infinite;
-		animation: animate;
-		animation-duration: 20s;
-		animation-iteration-count: infinite;
-		animation-timing-function: linear;
+		// animation: animate;
+		// animation-duration: 20s;
+		// animation-iteration-count: infinite;
+		// animation-timing-function: linear;
 		cursor: pointer;
 		left: 100%;
 		top: 50%;
@@ -192,6 +207,7 @@ body {
 	animation: shakeY 1s infinite, around 5s infinite linear;
 	height: 104px;
 	width: auto;
+	z-index: 100;
 }
 
 @keyframes shakeY {
@@ -279,7 +295,7 @@ body {
 			height: 70px !important;
 			width: 70px !important;
 			&:before {
-				background: url('./assets/prev-arrow-black.svg');
+				background: url('./assets/prev-arrow2.svg');
 				background-color: $c-red;
 				background-position: center;
 				background-size: 40px;
@@ -295,7 +311,7 @@ body {
 			height: 70px !important;
 			width: 70px !important;
 			&:before {
-				background: url('./assets/next-arrow-black.svg');
+				background: url('./assets/next-arrow2.svg');
 				background-color: $c-red;
 				background-position: center;
 				background-size: 40px;
@@ -320,4 +336,22 @@ body {
 .with-z-1 {
 	position: relative;
 	z-index: 1;
+}
+
+.the-fake-hr {
+	background-size: cover 100% !important;
+	background-position: center !important;
+	// background-attachment: fixed !important;
+	background-repeat: repeat-x !important;
+	height: 45px;
+}
+
+.theMapHolder {
+	box-shadow: 0 10px 10px 0 rgba($c-green, 0.25);
+	border-radius: 20px;
+	border: 2px solid #28988a;
+	height: 250px;
+	width: 100%;
+	overflow: hidden;
+	z-index: 2;
 }
