@@ -21,12 +21,14 @@ function BoxKit() {
 				<article
 					onMouseEnter={handleChange}
 					onMouseLeave={handleChange}
-					className="pizzakit w-full lg:w-6/12 mb-5 sm:mb-0 px-40 sm:px-32 md:px-56 lg:px-10 flex items-center justify-center"
+					className="pizzakit w-full lg:w-6/12 mb-5 sm:mb-0 px-20 sm:px-32 md:px-56 lg:px-10 flex items-center justify-center"
 				>
 					<img src={boxImage} alt="Pizza Kit" />
 				</article>
 				<article className="w-full lg:w-6/12 flex flex-col items-center justify-center text-white tracking-widest font-bold">
-					<h2 className="text-4xl">¡Ordena tu Pizza Kit!</h2>
+					<h2 className="text-4xl text-center leading-tight">
+						¡Ordena tu Pizza Kit!
+					</h2>
 					<p className="text-white text-center text-xl mt-2 leading-tight">
 						Disfruta de una deliciosa <br /> pizza creada porti.
 					</p>

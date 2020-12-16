@@ -77,7 +77,6 @@ body {
 		transform: translate(-50%, 0) !important;
 		transition: all 0.25s ease-in-out;
 		will-change: transform;
-		// width: 80%;
 	}
 	&:hover {
 		h2 {
@@ -85,52 +84,27 @@ body {
 			transform: translate(-50%, -50%) !important;
 		}
 	}
+	@media (max-width: 540px) {
+		&.swiper-slide-active {
+			h2 {
+				opacity: 1 !important;
+				transform: translate(-50%, -50%) !important;
+			}
+		}
+	}
 }
-
-// .main-content-container {
-// }
 
 .main-nav-header {
 	background: $c-red;
 	color: white;
 	cursor: pointer;
 	height: $s-banner;
+	transition: none !important;
+	max-width: 100vw !important;
 	z-index: 10;
-	.floating-text {
-		// animation: animate_one 2s linear 0 infinite;
-		// animation: animate;
-		// animation-duration: 20s;
-		// animation-iteration-count: infinite;
-		// animation-timing-function: linear;
-		cursor: pointer;
-		left: 100%;
-		top: 50%;
-		transform: translate3d(0%, -50%, 0);
-		will-change: transform;
-		&:last-child {
-			animation-delay: 10s;
-			left: 100%;
-		}
-	}
-	&:hover {
-		.floating-text {
-			animation-play-state: paused;
-		}
-	}
-	@media (max-width: 1220px) {
-		.floating-text {
-			p:first-child {
-				margin-right: 0 !important;
-			}
-		}
-	}
-	@media (max-width: 1110px) {
-		.floating-text {
-			padding: 0 !important;
-			p:last-child {
-				display: none;
-			}
-		}
+	h2 {
+		max-width: 100%;
+		transition: none !important;
 	}
 }
 
@@ -184,15 +158,6 @@ body {
 		background-repeat: no-repeat;
 		height: 100%;
 		width: 100%;
-	}
-}
-
-@keyframes animate {
-	0% {
-		transform: translate3d(0%, -50%, 0);
-	}
-	100% {
-		transform: translate3d(-200%, -50%, 0);
 	}
 }
 

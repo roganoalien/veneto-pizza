@@ -21,11 +21,11 @@ function Address() {
 		<article className="contact-section w-full pt-20 flex flex-wrap items-end justify-center relative">
 			<LoadScript googleMapsApiKey="AIzaSyBl2K12OyDSVmP_1-A1oF-Erps_7WhC-PA">
 				<div className="w-full lg:w-4/12 flex items-end justify-center lg:justify-between order-2 lg:order-1">
-					<Puesto className="h-auto w-4/12 lg:w-8/12 puesto-vector relative pointer-events-none" />
+					<Puesto className="h-auto w-8/12 sm:w-4/12 lg:w-8/12 puesto-vector relative pointer-events-none" />
 					{/* <Moto className="h-auto w-2/12 lg:w-4/12 animate_shakeY left-0 bottom-0" /> */}
 					<Moto className="animate_shakeY absolute left-0 bottom-0 pointer-events-none" />
 				</div>
-				<div className="w-full lg:w-8/12 flex flex-wrap items-end justify-center px-10 pb-10 order-1 lg:order-2 relative z-1">
+				<div className="w-full lg:w-8/12 flex flex-wrap items-end justify-center px-0 sm:px-10 pb-0 sm:pb-10 order-1 lg:order-2 relative z-1">
 					<div className="w-full md:w-6/12 px-4 mb-8 md:mb-0">
 						<div className="theMapHolder mb-10">
 							<GoogleMap

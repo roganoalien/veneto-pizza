@@ -9,11 +9,9 @@ function Layout({ children }) {
 		<Fragment>
 			{/* border-4 border-black */}
 			<nav className="main-nav-header w-full fixed left-0 top-0 overflow-hidden shadow-lg">
-				<div className="whitespace-no-wrap text-white w-full h-full text-lg font-bold px-20 flex items-center justify-center">
-					<p className="tracking-wide">
-						Servicio a Domicilio 8365.9989 y 8349.77.51
-					</p>
-				</div>
+				<h2 className="whitespace-no-wrap text-white w-auto h-full text-xs md:text-lg font-bold px-20 flex items-center justify-center">
+					Servicio a Domicilio 8365.9989 y 8349.77.51
+				</h2>
 			</nav>
 			<Header />
 			<main className="main-content-container w-full">{children}</main>
