@@ -320,3 +320,21 @@ body {
 	overflow: hidden;
 	z-index: 2;
 }
+
+.header-pizza-slide {
+	@media (max-width: 767px) {
+		.swiper-button-prev,
+		.swiper-button-next {
+			display: none;
+		}
+	}
+}
+
+.pizza-swiper {
+	@media (max-width: 767px) {
+		.swiper-button-prev,
+		.swiper-button-next {
+			background: transparent !important;
+		}
+	}
+}

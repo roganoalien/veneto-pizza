@@ -46,6 +46,7 @@ function Header() {
 		<section className="main-header flex items-center justify-center flex-col relative">
 			<div className="the-background-swiper absolute left-0 top-0 h-full w-full">
 				<Swiper
+					className="header-pizza-slide"
 					loop={true}
 					autoplay={{ delay: 3000, disableOnInteraction: false }}
 					effect="fade"

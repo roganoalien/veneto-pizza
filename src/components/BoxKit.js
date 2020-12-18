@@ -21,7 +21,7 @@ function BoxKit() {
 				<article
 					onMouseEnter={handleChange}
 					onMouseLeave={handleChange}
-					className="pizzakit w-full lg:w-6/12 mb-5 sm:mb-0 px-20 sm:px-32 md:px-56 lg:px-10 flex items-center justify-center"
+					className="pizzakit w-full lg:w-6/12 mb-5 sm:mb-0 px-10 sm:px-32 md:px-56 lg:px-10 flex items-center justify-center"
 				>
 					<img src={boxImage} alt="Pizza Kit" />
 				</article>
