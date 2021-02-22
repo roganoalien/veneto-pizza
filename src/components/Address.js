@@ -18,7 +18,10 @@ const center2 = {
 
 function Address() {
 	return (
-		<article className="contact-section w-full pt-20 flex flex-wrap items-end justify-center relative">
+		<article
+			id="contact"
+			className="contact-section w-full pt-20 flex flex-wrap items-end justify-center relative"
+		>
 			<LoadScript googleMapsApiKey="AIzaSyBl2K12OyDSVmP_1-A1oF-Erps_7WhC-PA">
 				<div className="w-full lg:w-4/12 flex items-end justify-center lg:justify-between order-2 lg:order-1">
 					<Puesto className="h-auto w-8/12 sm:w-4/12 lg:w-8/12 puesto-vector relative pointer-events-none" />
@@ -46,7 +49,7 @@ function Address() {
 								Country | Tec
 							</h3>
 							<p className="text-white tracking-wide text-center leading-tight my-2">
-								Av Paseo de las Americas 2417-A contry la silla
+								Av Paseo de las Americas 2417-A Contry La Silla
 							</p>
 							<p className="text-white tracking-wide text-center leading-tight my-2">
 								Tel: 8365-9989 y 8349-7751
@@ -73,7 +76,7 @@ function Address() {
 								Mitras
 							</h3>
 							<p className="text-white tracking-wide text-center leading-tight my-2">
-								Cervecería Fausto -Jordán 1144 mitras centro
+								Cervecería Fausto -Jordán 1144 Mitras Centro
 							</p>
 							<p className="text-white tracking-wide text-center leading-tight my-2">
 								Tel: 8135391969 y 8135391970

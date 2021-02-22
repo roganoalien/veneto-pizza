@@ -34,9 +34,9 @@ function BoxKit() {
 					</p>
 					<img className="mt-6" src={PizzaIcon} alt="Pizza" />
 					<p className="text-white text-center font-medium mt-6 text-sm">
-						Incluye:Masa precocida,Salsa detom ate,queso, <br />
-						1-2 ingredientes para pizza,aderezo de chipotle,chile
-						seco
+						Incluye: Masa precocida, salsa de tomate, queso, <br />
+						1-2 ingredientes para pizza , aderezo de chipotle y
+						chile seco.
 					</p>
 				</article>
 			</div>

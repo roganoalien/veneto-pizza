@@ -72,7 +72,7 @@ export const PizzaData = [
 		img: PepperoniLover
 	},
 	{
-		name: 'Spincacci',
+		name: 'Spinacci',
 		img: Spincacci
 	},
 	{

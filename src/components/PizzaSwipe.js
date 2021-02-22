@@ -37,7 +37,18 @@ function PizzaSwipe() {
 	});
 
 	return (
-		<article className="pizza-swiper w-full py-10 md:py-20 lg:py-20 bg-pink">
+		<article className="pizza-swiper w-full py-10 md:py-20 lg:py-20 relative">
+			<a
+				href="#MENU"
+				className="absolute order-btn other-shadow rounded-full px-10 py-2 text-white"
+				style={{
+					bottom: '20px',
+					left: '50%',
+					transform: 'translateX(-50%)'
+				}}
+			>
+				Descargar Menú
+			</a>
 			{theSlides === 4 && (
 				<Swiper
 					spaceBetween={50}
