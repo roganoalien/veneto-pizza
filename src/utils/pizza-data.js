@@ -76,7 +76,7 @@ export const PizzaData = [
 		img: Spincacci
 	},
 	{
-		name: 'Suprema Veneto',
+		name: 'Suprema Véneto',
 		img: Suprema
 	},
 	{
@@ -88,11 +88,11 @@ export const PizzaData = [
 		img: Veggie
 	},
 	{
-		name: 'Veneto Deluxe',
+		name: 'Véneto Deluxe',
 		img: Veneto
 	},
 	{
-		name: 'Veneto Especial',
+		name: 'Véneto Especial',
 		img: VenetoEspecial
 	}
 ];

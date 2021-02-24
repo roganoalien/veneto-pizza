@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 import SwiperCore, { Navigation } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { PizzaData } from '../utils/pizza-data';
-import MenuPDF from '../assets/veneto_menu.pdf';
+// import MenuPDF from '../assets/veneto_menu.pdf';
 
 import 'swiper/swiper.scss';
 import 'swiper/components/navigation/navigation.scss';
@@ -39,7 +39,7 @@ function PizzaSwipe() {
 
 	return (
 		<article className="pizza-swiper w-full py-10 md:py-20 lg:py-20 relative">
-			<a
+			{/* <a
 				target="_blank"
 				rel="noreferrer"
 				href={MenuPDF}
@@ -51,7 +51,7 @@ function PizzaSwipe() {
 				}}
 			>
 				Descargar Menú
-			</a>
+			</a> */}
 			{theSlides === 4 && (
 				<Swiper
 					spaceBetween={50}

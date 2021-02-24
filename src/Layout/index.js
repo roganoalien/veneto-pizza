@@ -25,23 +25,23 @@ function Layout({ children }) {
 			<Header />
 			<main className="main-content-container w-full">{children}</main>
 			<footer className="w-full the-main-footer">
-				<div className="container mx-auto grid gap-4 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 text-white text-xl tracking-wide font-bold py-5 px-10">
+				<div className="container mx-auto grid gap-4 grid-cols-1 sm:grid-cols-3 md:grid-cols-3 text-white text-xl tracking-wide font-bold py-5 px-10">
 					<a
 						className="flex justify-center"
 						href="https://www.instagram.com/venetopizza_/?hl=es-la"
 					>
-						<p className="m-0">@venetopizza_</p>
+						<p className="m-0">@vénetopizza_</p>
 					</a>
 					<a
 						className="flex justify-center"
 						href="https://www.facebook.com/venetomty"
 					>
-						<p className="m-0">@venetomty</p>
+						<p className="m-0">@vénetomty</p>
 					</a>
 					{/* <div className="flex justify-center">
 						<img className="rappi-logo" src={Rappi} alt="Rappi" />
 					</div> */}
-					<div className="flex justify-center col-span-1 sm:col-span-2 md:col-span-1">
+					<div className="flex justify-center col-span-1 md:col-span-1">
 						<img className="uber-logo" src={Uber} alt="Uber Eats" />
 					</div>
 					{/* <div className="flex justify-center">

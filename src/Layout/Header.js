@@ -15,6 +15,7 @@ import Veneto from '../assets/veneto-main.png';
 // import BtnBg from '../assets/btn-bg.png';
 import Pizza from '../assets/pizza-icon.png';
 import FakeHr from '../assets/fake-hr.png';
+import MenuPDF from '../assets/veneto_menu.pdf';
 
 const imageArray = [Header2, Header3, Header4, Header5, Header6];
 SwiperCore.use([Autoplay, EffectFade, Navigation]);
@@ -126,7 +127,7 @@ function Header() {
 					</a>
 				</Tilt>
 			) : (
-				<div className="flex justify-center items-center with-z-1">
+				<div className="flex flex-col justify-center items-center with-z-1">
 					<a
 						href="https://agilpedido.com/venetocontry"
 						className="with-z-1 order-btn rounded-full flex items-center justify-center px-6 py-3 mt-12"
@@ -136,6 +137,20 @@ function Header() {
 						<img src={Pizza} alt="Pizza Icon" />
 						<span className="text-white font-bold text-xl pl-10">
 							Ordena en línea
+						</span>
+					</a>
+					<a
+						target="_blank"
+						rel="noreferrer"
+						href={MenuPDF}
+						// href="https://agilpedido.com/venetocontry"
+						className="with-z-1 order-btn rounded-full flex items-center justify-center px-6 py-3 mt-6"
+						// style={{ background: `url(${BtnBg})` }}
+					>
+						<div className="bg-faker absolute left-0 top-0 h-full"></div>
+						<img src={Pizza} alt="Pizza Icon" />
+						<span className="text-white font-bold text-xl pl-10">
+							Descargar Menú
 						</span>
 					</a>
 				</div>
