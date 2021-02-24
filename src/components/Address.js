@@ -52,7 +52,20 @@ function Address() {
 								Av Paseo de las Americas 2417-A Contry La Silla
 							</p>
 							<p className="text-white tracking-wide text-center leading-tight my-2">
-								Tel: 8365-9989 y 8349-7751
+								Tel:{' '}
+								<a
+									href="tel:+528183659989"
+									className="underline"
+								>
+									818365-9989
+								</a>{' '}
+								y{' '}
+								<a
+									href="tel:+528183497751"
+									className="underline"
+								>
+									818349-7751
+								</a>
 							</p>
 						</div>
 					</div>
@@ -79,7 +92,20 @@ function Address() {
 								Cervecería Fausto -Jordán 1144 Mitras Centro
 							</p>
 							<p className="text-white tracking-wide text-center leading-tight my-2">
-								Tel: 8135391969 y 8135391970
+								Tel:{' '}
+								<a
+									href="tel:+528135391969"
+									className="underline"
+								>
+									8135391969
+								</a>{' '}
+								y{' '}
+								<a
+									href="tel:+528135391970"
+									className="underline"
+								>
+									8135391970
+								</a>
 							</p>
 							{/* <a
 							href="tel:+525582457813"

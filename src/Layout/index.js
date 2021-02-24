@@ -18,7 +18,7 @@ function Layout({ children }) {
 						href="#contact"
 						className="order-btn no-shadow rounded-full px-3 py-1 ml-2"
 					>
-						ver teléfonos
+						Ver teléfonos
 					</a>
 				</h2>
 			</nav>

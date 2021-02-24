@@ -43,7 +43,7 @@ function PizzaSwipe() {
 				target="_blank"
 				rel="noreferrer"
 				href={MenuPDF}
-				className="absolute order-btn other-shadow rounded-full px-10 py-2 text-white"
+				className="absolute order-btn other-shadow rounded-full px-10 py-2 text-white z-50"
 				style={{
 					bottom: '20px',
 					left: '50%',
